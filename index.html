@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selector Tree</title>
+
+    <style>
+      .grandfather{
+        margin:10px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 20px; 
+        padding-right:20px;
+        border:dotted;
+        text-align:left;
+      }
+      .father{
+        margin:5px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 20px; 
+        padding-right:20px;
+        border:dotted;
+        text-align:center;
+      }
+      .person{
+        margin:5px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 25px; 
+        padding-right:20px;
+        border: dotted;
+        text-align:left;
+      }
+      .children{
+        margin-left:10px;
+        margin-right:10px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 20px; 
+        padding-right:20px;
+        border: dotted;
+        text-align:left;
+      }
+      .grandchildren{
+        margin:10px;
+        padding-left: 20px;
+        padding-top: 5px;
+        padding-bottom: 20px; 
+        padding-right:20px;
+        border: dotted;
+        text-align:left;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="app">
+      <div class="grandfather">
+        Grandfather
+        <div class="father">
+          Father
+          <div class="person">
+            Person-1
+            <div class="children">
+              Child-1
+            </div>
+            <div class="children">
+              Child-2
+            </div>
+            <div class="children">
+              Child-3
+            </div>
+            <div class="children">
+              Child-4
+              <div class="grandchildren">
+                1
+                </div>
+                <div class="grandchildren">
+                  2
+                </div>
+                  <div class="grandchildren">
+                    3
+                  </div>
+                    <div class="grandchildren">
+                      4
+                    </div>
+                
+            </div>
+          </div>
+
+
+            <div class="person">
+              Person-2
+              <div class="children">
+                Child-1
+              </div>
+              <div class="children">
+                Child-2
+              </div>
+              <div class="children">
+                Child-3
+                <div class="grandchildren">
+                  1
+                  </div>
+                  <div class="grandchildren">
+                    2
+                  </div>
+                    <div class="grandchildren">
+                      3
+                    </div>
+                      <div class="grandchildren">
+                        4
+                      </div>
+              </div>
+              <div class="children">
+                Child-4
+              </div>
+            </div>
+
+              <div class="person">
+                Person-3
+                <div class="children">
+                  Child-1
+                </div>
+                <div class="children">
+                  Child-2
+                  <div class="grandchildren">
+                    1
+                    </div>
+                    <div class="grandchildren">
+                      2
+                    </div>
+                      <div class="grandchildren">
+                        3
+                      </div>
+                        <div class="grandchildren">
+                          4
+                        </div>
+                </div>
+                <div class="children">
+                  Child-3
+                </div>
+                <div class="children">
+                  Child-4
+                </div>
+              </div>
+
+                <div class="person">
+                  Person-4
+                  <div class="children">
+                    Child-1
+                    <div class="grandchildren">
+                      1
+                      </div>
+                      <div class="grandchildren">
+                        2
+                      </div>
+                        <div class="grandchildren">
+                          3
+                        </div>
+                          <div class="grandchildren">
+                            4
+                          </div>
+                  </div>
+                  <div class="children">
+                    Child-2
+                  </div>
+                  <div class="children">
+                    Child-3
+                  </div>
+                  <div class="children">
+                    Child-4
+                  </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
